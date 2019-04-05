@@ -60,7 +60,8 @@
 
 {% include "bulk_add/sopns/_known-people.html" %}
 
-  <form method=POST id="bulk_add_form">
+<h4> {{ election_obj.name }}</h4>
+<form method=POST id="bulk_add_form">
   {% if known_people %}
     <button type=submit>Review</button>
   {% endif %}
